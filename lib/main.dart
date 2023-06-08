@@ -2,13 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-import 'package:riverpod_learning/3_timer.dart';
-import 'package:riverpod_learning/2_weather.dart';
-import 'package:riverpod_learning/4_persons.dart';
-import 'package:riverpod_learning/5_films.dart';
 import 'package:supabase_flutter/supabase_flutter.dart' as supa;
 
-import '1_counter.dart';
+import 'examples/5_films.dart';
 
 void main() async {
   WidgetsFlutterBinding.ensureInitialized();
