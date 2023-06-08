@@ -1,7 +1,9 @@
 // ignore_for_file: prefer_const_constructors, unused_import
 
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:riverpod_learning/firebase_options.dart';
 import 'package:supabase_flutter/supabase_flutter.dart' as supa;
 
 import 'examples/5_films.dart';
@@ -13,6 +15,10 @@ void main() async {
     url: "https://sloyzbyrkoimithtvueg.supabase.co",
     anonKey:
         "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InNsb3l6Ynlya29pbWl0aHR2dWVnIiwicm9sZSI6ImFub24iLCJpYXQiOjE2ODAxOTgzMzMsImV4cCI6MTk5NTc3NDMzM30.kjHjKLZTd9YfvpQbVLZJvTNF-54tlAZG9MRiFuUv4wk",
+  );
+
+  await Firebase.initializeApp(
+    options: DefaultFirebaseOptions.currentPlatform,
   );
 
   runApp(

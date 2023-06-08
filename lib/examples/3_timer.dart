@@ -49,7 +49,7 @@ class TimerScreen extends ConsumerWidget {
         },
         error: (error, stackTrace) => Text(
           "Error: $error",
-          style: Theme.of(context).textTheme.headline2,
+          style: Theme.of(context).textTheme.displayMedium,
         ),
         loading: () => const Center(
           child: CircularProgressIndicator(),

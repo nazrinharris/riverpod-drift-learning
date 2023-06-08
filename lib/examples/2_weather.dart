@@ -50,12 +50,12 @@ class WeatherScreen extends ConsumerWidget {
             data: (data) {
               return Text(
                 data,
-                style: Theme.of(context).textTheme.headline1,
+                style: Theme.of(context).textTheme.displayLarge,
               );
             },
             error: (error, stackTrace) => Text(
               "Error: $error",
-              style: Theme.of(context).textTheme.headline1,
+              style: Theme.of(context).textTheme.displayLarge,
             ),
             loading: () => Padding(
               padding: const EdgeInsets.all(40.0),

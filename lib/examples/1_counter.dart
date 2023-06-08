@@ -20,7 +20,7 @@ class FooScreen extends ConsumerWidget {
             final count = ref.watch(counterProvider);
             return Text(
               count?.toString() ?? "null",
-              style: Theme.of(context).textTheme.headline4,
+              style: Theme.of(context).textTheme.headlineMedium,
             );
           }),
           SizedBox(height: 20),
