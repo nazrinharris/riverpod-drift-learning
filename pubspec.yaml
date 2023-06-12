@@ -24,6 +24,11 @@ dependencies:
   firebase_core: ^2.13.1
   cloud_firestore: ^4.8.0
 
+  drift: ^2.8.2
+  sqlite3_flutter_libs: ^0.5.0
+  path_provider: ^2.0.0
+  path: ^1.8.3
+
   uuid:
 
 dev_dependencies:
@@ -31,6 +36,8 @@ dev_dependencies:
     sdk: flutter
 
   flutter_lints: ^2.0.0
+  drift_dev: ^2.8.3
+  build_runner: ^2.4.5
 
 flutter:
   uses-material-design: true
