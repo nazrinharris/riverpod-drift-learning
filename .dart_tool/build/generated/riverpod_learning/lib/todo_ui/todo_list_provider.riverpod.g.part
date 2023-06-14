@@ -1,0 +1,54 @@
+// **************************************************************************
+// RiverpodGenerator
+// **************************************************************************
+
+String _$watchCompletedTasksHash() =>
+    r'19d0bb55e0970135587f7d2017c4638a12179d13';
+
+/// See also [watchCompletedTasks].
+@ProviderFor(watchCompletedTasks)
+final watchCompletedTasksProvider =
+    AutoDisposeStreamProvider<List<dynamic>>.internal(
+  watchCompletedTasks,
+  name: r'watchCompletedTasksProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$watchCompletedTasksHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef WatchCompletedTasksRef = AutoDisposeStreamProviderRef<List<dynamic>>;
+String _$watchAllTasksHash() => r'45d389d948fcd5341556fed88ab0a4ee2b42a340';
+
+/// See also [watchAllTasks].
+@ProviderFor(watchAllTasks)
+final watchAllTasksProvider =
+    AutoDisposeStreamProvider<List<TaskWithTag>>.internal(
+  watchAllTasks,
+  name: r'watchAllTasksProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$watchAllTasksHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef WatchAllTasksRef = AutoDisposeStreamProviderRef<List<TaskWithTag>>;
+String _$showIsCompletedHash() => r'17c8a197bf113e2da98d93906c1204c594726721';
+
+/// See also [ShowIsCompleted].
+@ProviderFor(ShowIsCompleted)
+final showIsCompletedProvider =
+    AutoDisposeNotifierProvider<ShowIsCompleted, bool>.internal(
+  ShowIsCompleted.new,
+  name: r'showIsCompletedProvider',
+  debugGetCreateSourceHash: const bool.fromEnvironment('dart.vm.product')
+      ? null
+      : _$showIsCompletedHash,
+  dependencies: null,
+  allTransitiveDependencies: null,
+);
+
+typedef _$ShowIsCompleted = AutoDisposeNotifier<bool>;
+// ignore_for_file: unnecessary_raw_strings, subtype_of_sealed_class, invalid_use_of_internal_member, do_not_use_environment, prefer_const_constructors, public_member_api_docs, avoid_private_typedef_functions

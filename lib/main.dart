@@ -4,6 +4,7 @@ import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:riverpod_learning/firebase_options.dart';
+import 'package:riverpod_learning/todo_ui/todo_list_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart' as supa;
 
 import 'examples/5_films.dart';
@@ -37,7 +38,7 @@ class RiverApp extends StatelessWidget {
       darkTheme: ThemeData.dark(),
       themeMode: ThemeMode.dark,
       title: "Riverpod Learning",
-      home: FilmsScreen(),
+      home: TodoListScreen(),
     );
   }
 }
